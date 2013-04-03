@@ -60,6 +60,7 @@ repetir 3
   izquierda(90)
 avanzar(n)
 
+
 b-
 Precondiciones:
 A distinto de B
@@ -83,6 +84,7 @@ repetir 5
   izquierda(120)
 avanzar(n)
 
+
 d-
 Precondiciones:
 igual longuitud de lados (L)
@@ -93,3 +95,32 @@ repetir (L-1)
   izquierda(angulo_interno)
 avanzar(n)
 
+
+5-
+24 postes a equidistantes
+144 metros cuadrados de superficie, es un cuadrado
+                                                              
+L= longuitud lado= 12 metros                                    
+7 postes en cada lado                                         l---1---1---1---1---1---i
+                                                              :
+                                                              :
+                                                              :
+                                                              -
+                                                              :
+P = perimetro = 12*4 = 48 metros
+
+
+a-
+La distancia entre dos postes consecutivos de un mismo lado es de 12/6 = 2 metros.
+
+b-
+i=1
+repetir 24
+  avanzar(2)
+  colocar_poste
+  si i=6 OR i=12 OR i=18 
+    girar_derecha
+  i=1+1
+
+
+6-
