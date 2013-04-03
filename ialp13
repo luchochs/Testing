@@ -1,0 +1,49 @@
+TP2
+1-
+
+8 perlas
+1 más libiana que el resto
+balanza, 2 pesadas
+----------------
+separo 6 (abcdef)
+peso 3 (abc) y 3 (def)
+si igual peso
+  peso 2 restantes (gh)
+  la perla buscada es la mas liviana (g ó h)
+sino
+  elijo las tres mas livianas (abc ó def)
+  peso 2 de ellas (ab ó de, por ejemplo)
+  si igual peso
+    la restante es la perla buscada (c ó f, por ejemplo)
+  sino
+    la perla buscada es la mas liviana (a ó b, d ó e)
+
+
+2-
+
+24 bolillas
+1 más pesada que el resto
+balanza, 3 pesadas
+---------------
+armo tres grupos de 8
+peso 2 de ellos
+  si igual peso
+    elegimos el restante grupo (más pesado)
+  sino
+    elegimos el grupo mas pesado
+(con el grupo más pesado determinado, seguimos los pasos del ejercicio anterior,
+buscando ahora el elemento más pesada)
+
+3-
+
+2 toneles
+108 litros en total
+---------------
+T1 + T2 = 108 (1), entonces T2 = 108 - T1 (3)
+2(T1 - 4) = T2 + 4 (2) 
+
+de (2) y (3)
+2T1 - 8 = 108 - T1 + 4
+3T1 = 108 + 8 + 4
+T1 = 120/3
+T1 = 40 litros, por lo tanto de (3) T2 = 68 litros.
