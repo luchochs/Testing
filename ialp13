@@ -34,6 +34,7 @@ peso 2 de ellos
 (con el grupo más pesado determinado, seguimos los pasos del ejercicio anterior,
 buscando ahora el elemento más pesada)
 
+
 3-
 
 2 toneles
@@ -47,3 +48,48 @@ de (2) y (3)
 3T1 = 108 + 8 + 4
 T1 = 120/3
 T1 = 40 litros, por lo tanto de (3) T2 = 68 litros.
+
+
+4-
+a-
+Precondiciones:
+cuatro lados iguales
+
+repetir 3
+  avanzar(n)
+  izquierda(90)
+avanzar(n)
+
+b-
+Precondiciones:
+A distinto de B
+2A + 2B = 60, entonces A + B = 30 . Por ejemplo A=20 y B=10.
+
+avanzar(A)
+izquierda(90)
+avanzar(B)
+izquierda(90)
+avanzar(A)
+izquierda(90)
+avanzar(B)
+
+
+c-
+Precondiciones:
+seis lados iguales
+
+repetir 5
+  avanzar(n)
+  izquierda(120)
+avanzar(n)
+
+d-
+Precondiciones:
+igual longuitud de lados (L)
+angulo_interno=180*(L-2)/2
+
+repetir (L-1)
+  avanzar(n)
+  izquierda(angulo_interno)
+avanzar(n)
+
