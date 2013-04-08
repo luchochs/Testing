@@ -88,11 +88,14 @@ avanzar(n)
 d-
 Precondiciones:
 igual longuitud de lados (L)
-angulo_interno=180*(L-2)/2
+L > 2
+n > 0
+angulo_interno=180*(L-2)/L
+girar = 180 - angulo_interno
 --------------
 repetir (L-1)
   avanzar(n)
-  izquierda(angulo_interno)
+  izquierda(girar)
 avanzar(n)
 
 
@@ -124,3 +127,30 @@ repetir 24
 
 
 6-
+pasos elementales:
+avanzar
+hay papel
+junta papel
+girar a la derecha
+
+a-
+precondciones:
+inicia en calle 1 y avenida 1
+mira para arriba
+----------------
+
+repetir 4
+  avanzar
+
+b-
+avanzar
+girar_a_la_derecha(90)
+repetir 3
+  avanzar
+
+c-
+girar_a_la_derecha(90)
+repetir 99
+  si hay_papel
+    junta papel
+  avanzar
