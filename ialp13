@@ -154,3 +154,113 @@ repetir 99
   si hay_papel
     junta papel
   avanzar
+
+d-
+cant_papeles = 0
+girar_a_la_derecha(90)
+repetir 99
+  si hay_papel
+    cant_papeles = cant_papeles + 1
+    junta papel
+  avanzar
+
+e-
+girar_a_la_derecha(90)
+repetir 99
+  si hay_papel
+    cant_papeles = cant_papeles + 1
+    junta papel
+  avanzar
+si hay_papel
+    cant_papeles = cant_papeles + 1
+    junta papel
+girar_a_la_derecha(270)
+avanzar
+girar_a_la_derecha(270)
+repetir 99
+  si hay_papel
+    cant_papeles = cant_papeles + 1
+    junta papel
+  avanzar
+si hay_papel
+    cant_papeles = cant_papeles + 1
+    junta papel
+
+7-
+N = aaaammdd
+
+a = N DIV 10000
+m = (N MOD 10000) DIV 100
+d = (N MOD 10000) MOD 100
+
+8-
+a-
+ALGORITMO siguiente
+Datos entrada:
+a
+Datos de salida:
+n
+
+n = a + 1
+
+b-
+ALGORITMO suma
+Datos entrada:
+a
+b
+Datos de salida:
+s
+
+s = a + b
+
+c-
+ALGORITMO porcentaje
+Datos entrada:
+x
+Datos de salida:
+p
+
+p = x*0.3
+
+d-
+ALGORITMO mayor_menor
+Datos entrada:
+a
+b
+Datos de salida:
+a_es_mayor
+
+si a > b
+  a_es_mayor = 1
+sino 
+  a_es_mayor = 0
+
+e-
+ALGORITMO promedio
+Datos entrada:
+a
+b
+Datos de salida:
+p
+
+p = (a + b)/2
+
+f-
+ALGORITMO unidad
+Datos entrada:
+a
+Datos de salida:
+u
+
+u = a MOD 10
+
+g-
+ALGORITMO unidad_significativo
+Datos entrada:
+N
+Datos de salida:
+u
+s
+
+u = a MOD 10
+s = 
