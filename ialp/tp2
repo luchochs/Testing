@@ -308,4 +308,22 @@ repetir n
 
 b-
 
+c-
+
+d-
+DE
+N
+DS
+es_primo
+DA
+M
+
+es_primo = false
+M = 2
+mientras (N MOD M != 0)
+  es_primo = true
+  si M < (N DIV 2)
+    M = M + 1
+
+  
 
