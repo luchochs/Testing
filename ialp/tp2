@@ -206,8 +206,8 @@ n = a + 1
 b-
 ALGORITMO suma
 Datos entrada:
-a
-b
+a // numero real
+b // numero real
 Datos de salida:
 s
 
@@ -225,14 +225,14 @@ p = x*0.3
 d-
 ALGORITMO mayor_menor
 Datos entrada:
-a
-b
+a // numero 
+b // numero
 Datos de salida:
-a_es_mayor
+a_es_mayor // booleano ( logico )
 
 si a > b
   a_es_mayor = 1
-sino 
+sino
   a_es_mayor = 0
 
 e-
@@ -248,19 +248,43 @@ p = (a + b)/2
 f-
 ALGORITMO unidad
 Datos entrada:
-a
+a // numero entero
 Datos de salida:
-u
+u // numero entero
 
 u = a MOD 10
 
 g-
 ALGORITMO unidad_significativo
 Datos entrada:
-N
+N // numero entero mayor a 9
 Datos de salida:
-u
-s
+u // numero entero
+s // numero entero
+Dato auxiliar:
+da
 
-u = a MOD 10
-s = 
+u = N MOD 10
+mientras da > 0
+  s = N MOD 10
+  da = N DIV 10
+  N = da
+
+i-
+ALGORITMO incisoI
+DE
+c
+DS
+cant_bill_25
+cant_bill_10
+cant_bill_5
+cant_bill_1
+DA
+da
+
+cant_bill_25 = c DIV 25
+da = c MOD 25
+cant_bill_10 = da DIV 10
+da = da MOD 10
+cant_bill_5 = da DIV 5
+cant_bill_1 = da MOD 5
