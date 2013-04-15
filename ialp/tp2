@@ -288,3 +288,24 @@ cant_bill_10 = da DIV 10
 da = da MOD 10
 cant_bill_5 = da DIV 5
 cant_bill_1 = da MOD 5
+
+
+9-
+a-
+DE
+n
+DS
+producto
+DA
+numeroPar
+
+
+numeroPar = 2
+producto = 1
+repetir n
+  producto = producto * numeroPar
+  numeroPar = numeroPar + 2
+
+b-
+
+
