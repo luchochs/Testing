@@ -1,0 +1,42 @@
+algoritmo QUINIELA
+DE:
+//
+//
+//
+DS:
+//
+DA:
+saldo //
+
+
+-------------------------
+saldo = 100
+cantidadApuestas = 1
+
+mientras (saldo > 0) Y (cantidadApuestas <= 10)
+
+  // Leemos los valores ingresados por el usuario.
+	apuesta = LEER // cantidad de pesos apostada.
+	numeroApuesta = LEER // numero que se apuesta 0..99.
+	tipoApuesta = LEER // entero 1 ó 10.
+
+	// Validaciones.
+	error = 0
+	si (apuesta > saldo)
+		ESCRIBIR ("Error: Saldo insuficiente. Su saldo actual es de $" + saldo + "." )
+		error = 200
+	si (numeroApuesta < 0) OR (numeroApuesta > 99)
+		ESCRIBIR ("Error: Ingrese un numero entre 0 y 99.")
+		error = 201
+	si (tipoApuesta != 1) OR (tipoApuesta != 10)
+		ESCRIBIR ("Error: Ingrese '1' para jugar a la cabeza ó '10' para jugar a la corrida.")
+		error = 202
+
+	 
+	numero1 = AZAR
+	si (tipoApuesta = 1)
+		si (error = 0)	
+	
+
+	mientras (apuesta > saldo)
+		ESCRIBIR ("Error: Saldo insuficiente. Su saldo actual es de $" + saldo + "." )

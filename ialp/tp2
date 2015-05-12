@@ -1,0 +1,329 @@
+TP2
+1-
+
+8 perlas
+1 más libiana que el resto
+balanza, 2 pesadas
+----------------
+separo 6 (abcdef)
+peso 3 (abc) y 3 (def)
+si igual peso
+  peso 2 restantes (gh)
+  la perla buscada es la mas liviana (g ó h)
+sino
+  elijo las tres mas livianas (abc ó def)
+  peso 2 de ellas (ab ó de, por ejemplo)
+  si igual peso
+    la restante es la perla buscada (c ó f, por ejemplo)
+  sino
+    la perla buscada es la mas liviana (a ó b, d ó e)
+
+
+2-
+
+24 bolillas
+1 más pesada que el resto
+balanza, 3 pesadas
+---------------
+armo tres grupos de 8
+peso 2 de ellos
+  si igual peso
+    elegimos el restante grupo (más pesado)
+  sino
+    elegimos el grupo mas pesado
+(con el grupo más pesado determinado, seguimos los pasos del ejercicio anterior,
+buscando ahora el elemento más pesada)
+
+
+3-
+
+2 toneles
+108 litros en total
+---------------
+T1 + T2 = 108 (1), entonces T2 = 108 - T1 (3)
+2(T1 - 4) = T2 + 4 (2) 
+
+de (2) y (3)
+2T1 - 8 = 108 - T1 + 4
+3T1 = 108 + 8 + 4
+T1 = 120/3
+T1 = 40 litros, por lo tanto de (3) T2 = 68 litros.
+
+
+4-
+a-
+Precondiciones:
+cuatro lados iguales
+--------------
+repetir 3
+  avanzar(n)
+  izquierda(90)
+avanzar(n)
+
+
+b-
+Precondiciones:
+A distinto de B
+2A + 2B = 60, entonces A + B = 30 . Por ejemplo A=20 y B=10.
+--------------
+avanzar(A)
+izquierda(90)
+avanzar(B)
+izquierda(90)
+avanzar(A)
+izquierda(90)
+avanzar(B)
+
+
+c-
+Precondiciones:
+seis lados iguales
+--------------
+repetir 5
+  avanzar(n)
+  izquierda(120)
+avanzar(n)
+
+
+d-
+Precondiciones:
+igual longuitud de lados (L)
+L > 2
+n > 0
+angulo_interno=180*(L-2)/L
+girar = 180 - angulo_interno
+--------------
+repetir (L-1)
+  avanzar(n)
+  izquierda(girar)
+avanzar(n)
+
+
+5-
+24 postes a equidistantes
+144 metros cuadrados de superficie, es un cuadrado
+                                                              
+L= longuitud lado= 12 metros                                    
+7 postes en cada lado                                         l---1---1---1---1---1---i
+                                                              :
+                                                              :
+                                                              :
+                                                              -
+                                                              :
+P = perimetro = 12*4 = 48 metros
+
+
+a-
+La distancia entre dos postes consecutivos de un mismo lado es de 12/6 = 2 metros.
+
+b-
+i=1
+repetir 24
+  avanzar(2)
+  colocar_poste
+  si i=6 OR i=12 OR i=18 
+    girar_derecha
+  i=1+1
+
+
+6-
+pasos elementales:
+avanzar
+hay papel
+junta papel
+girar a la derecha
+
+a-
+precondciones:
+inicia en calle 1 y avenida 1
+mira para arriba
+----------------
+
+repetir 4
+  avanzar
+
+b-
+avanzar
+girar_a_la_derecha(90)
+repetir 3
+  avanzar
+
+c-
+girar_a_la_derecha(90)
+repetir 99
+  si hay_papel
+    junta papel
+  avanzar
+
+d-
+cant_papeles = 0
+girar_a_la_derecha(90)
+repetir 99
+  si hay_papel
+    cant_papeles = cant_papeles + 1
+    junta papel
+  avanzar
+
+e-
+girar_a_la_derecha(90)
+repetir 99
+  si hay_papel
+    cant_papeles = cant_papeles + 1
+    junta papel
+  avanzar
+si hay_papel
+    cant_papeles = cant_papeles + 1
+    junta papel
+girar_a_la_derecha(270)
+avanzar
+girar_a_la_derecha(270)
+repetir 99
+  si hay_papel
+    cant_papeles = cant_papeles + 1
+    junta papel
+  avanzar
+si hay_papel
+    cant_papeles = cant_papeles + 1
+    junta papel
+
+7-
+N = aaaammdd
+
+a = N DIV 10000
+m = (N MOD 10000) DIV 100
+d = (N MOD 10000) MOD 100
+
+8-
+a-
+ALGORITMO siguiente
+Datos entrada:
+a
+Datos de salida:
+n
+
+n = a + 1
+
+b-
+ALGORITMO suma
+Datos entrada:
+a // numero real
+b // numero real
+Datos de salida:
+s
+
+s = a + b
+
+c-
+ALGORITMO porcentaje
+Datos entrada:
+x
+Datos de salida:
+p
+
+p = x*0.3
+
+d-
+ALGORITMO mayor_menor
+Datos entrada:
+a // numero 
+b // numero
+Datos de salida:
+a_es_mayor // booleano ( logico )
+
+si a > b
+  a_es_mayor = 1
+sino
+  a_es_mayor = 0
+
+e-
+ALGORITMO promedio
+Datos entrada:
+a
+b
+Datos de salida:
+p
+
+p = (a + b)/2
+
+f-
+ALGORITMO unidad
+Datos entrada:
+a // numero entero
+Datos de salida:
+u // numero entero
+
+u = a MOD 10
+
+g-
+ALGORITMO unidad_significativo
+Datos entrada:
+N // numero entero mayor a 9
+Datos de salida:
+u // numero entero
+s // numero entero
+Dato auxiliar:
+da
+
+u = N MOD 10
+mientras da > 0
+  s = N MOD 10
+  da = N DIV 10
+  N = da
+
+i-
+ALGORITMO incisoI
+DE
+c
+DS
+cant_bill_25
+cant_bill_10
+cant_bill_5
+cant_bill_1
+DA
+da
+
+cant_bill_25 = c DIV 25
+da = c MOD 25
+cant_bill_10 = da DIV 10
+da = da MOD 10
+cant_bill_5 = da DIV 5
+cant_bill_1 = da MOD 5
+
+
+9-
+a-
+DE
+n
+DS
+producto
+DA
+numeroPar
+
+
+numeroPar = 2
+producto = 1
+repetir n
+  producto = producto * numeroPar
+  numeroPar = numeroPar + 2
+
+b-
+
+c-
+
+d-
+DE
+N
+DS
+es_primo
+DA
+M
+
+es_primo = false
+M = 2
+mientras (N MOD M != 0)
+  es_primo = true
+  si M < (N DIV 2)
+    M = M + 1
+
+  
+
