@@ -1,6 +1,6 @@
 ---
 title: "Actualizando"
-bg: purple
+bg: black 
 color: white
 fa-icon: cloud-upload
 ---
