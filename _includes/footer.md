@@ -1,8 +1,3 @@
 
 
-Design by Tim O'Brien [t413.com](http://t413.com/)
-&mdash;
-[SinglePaged theme](https://github.com/t413/SinglePaged)
-&mdash;
-this site is [open source]({{ site.source_link }})
-
+Diseño de [Tim O'Brien](http://t413.com/), vía [SinglePaged](https://github.com/t413/SinglePaged).
